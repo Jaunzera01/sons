@@ -1,0 +1,15 @@
+.teclado {
+    background: Linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%);
+    box-shadow: 10px 10px 3px gray;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    justify-items: center;
+    border: 1px solid rgb(8,8,8);
+    }
+
+.tecla{
+    backgroud-color: #ffffff;
+    border-radius: 30px;
+    
