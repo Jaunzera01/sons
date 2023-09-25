@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prog.css">
     <title>Document</title>
 </head>
+
 <body>
-<h1>Teclado</h1>
-<section class="teclado"> 
-    <selection class="tecla tecla_pom">Pom</button>
-    <selection class="tecla tecla_clap">Clap</button>
-    <selection class="tecla tecla_tim">Tim</button>
-    <selection class="tecla tecla_puff">Puff/button>
-    <selection class="tecla tecla_splash">Splash</button>
-    <selection class="tecla tecla_toim">Toim</btton>
-    <selection class="tecla tecla_psh">Psh</button>
-    <selection class="tecla tecla_tic">Tic</selection>
-    <selection class="tecla tecla_tom">Tom</button>
-    <section>
+    <h1>Teclado</h1>
+    <section class="teclado">
+        <button class="tecla tecla_pom">Pom</button>
+        <button class="tecla tecla_clap">Clap</button>
+        <button class="tecla tecla_tim">Tim</button>
+        <button class="tecla tecla_puff">Puff</button>
+        <button class="tecla tecla_splash">Splash</button>
+        <button class="tecla tecla_toim">Toim</button>
+        <button class="tecla tecla_psh">Psh</button>
+        <button class="tecla tecla_tic">Tic</button>
+        <button class="tecla tecla_tom">Tom</button>
+    </section>
+    <div>
+        <audio src="/audios/keyq.wav" id="som-tecla_pom"></audio>
+        <audio src="/audios/keya.wav" id="som-tecla_clap"></audio>
+        <audio src="/audios/keyc.wav" id="som-tecla_tim"></audio>
+        <audio src="/audios/keyd.wav" id="som-tecla_puff"></audio>
+        <audio src="/audios/keye.wav" id="som-tecla_splash"></audio>
+        <audio src="/audios/keys.wav" id="som-tecla_toim"></audio>
+        <audio src="/audios/keyw.wav" id="som-tecla_psh"></audio>
+        <audio src="/audios/keyx.wav" id="som-tecla_tic"></audio>
+        <audio src="/audios/keyz.wav" id="som-tecla_tom"></audio>
+    </div>
 
-    <audio src="/audios/keyq.wav" id="som-tecla_pom"></audio>
-    <audio src="/audios/keya.wav" id="som-tecla_clap"></audio>
-    <audio src="/audios/keyc.wav" id="som-tecla_tim"></audio>
-    <audio src="/audios/keyd.wav" id="som-tecla_puff"></audio>
-    <audio src="/audios/keye.wav" id="som-tecla_splash"></audio>
-    <audio src="/audios/keys.wav" id="som-tecla_toim"></audio>
-    <audio src="/audios/keyw.wav" id="som-tecla_psh"></audio>
-    <audio src="/audios/keyx.wav" id="som-tecla_tic"></audio>
-    <audio src="/audios/keyz.wav" id="som-tecla_tom"></audio>
-<div>
-
-    <script scr="../main.js"></script>
+    <script scr="main.js"></script>
 </body>
 
 </html>
