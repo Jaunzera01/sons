@@ -18,6 +18,6 @@ function tocar() {
       Contador = Contador +1;
      }
                                
-     ,
+     
      //console conversando comigo
      console.log(contador);
