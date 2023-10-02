@@ -1,23 +1,25 @@
 // função = tocar
-function tocar() {
-    document.querySelector ('#som_tecla_pow').play();
+function tocar(idElementoAudio) {
+    document.querySelector (idElementoAudio).play();
  }
- 
- //constante = lista de botões 
  const ListaDeTeclas = document.querySelectorALL('.,tecla');
  
- //variavel =0 a infinito 
  let cotador = 0;
  
- // enquanto ou condição
  while (contador< ListaDeTeclas.length) {
-     // acessando o elemento dentro da constante lista
-     ListaTeclas[contador].onclick = tocar;
- 
-      //adicionado a variavel= novo valor
-      Contador = Contador +1;
+     const classe =ListaDeTeclas[Contador].classList[1];
+     const idAudio = `#som_${classe}`;
+     tecla.onclick = function () {
+     ListaTeclas[contador].onclick = function () {
+        tocar(IdAudio);    
+
      }
-                               
-     
-     //console conversando comigo
-     console.log(contador);
+      Contador = Contador +1;
+      tecla.onkeydown = fuction () {
+       tecla.classList.add('ativa');
+    } 
+    
+    tecla.onkeyup = function() {
+        tecla.classList.remove('ativa');
+    }
+}
