@@ -6,8 +6,9 @@ function tocar(idElementoAudio) {
  
  let cotador = 0;
  
- while (contador< ListaDeTeclas.length) {
-     const classe =ListaDeTeclas[Contador].classList[1];
+ for (contador< ListaDeTeclas.length) {
+     const tecla = ListaDeTeclas[Contador];
+     const classe = tecla.classList[1];
      const idAudio = `#som_${classe}`;
      tecla.onclick = function () {
      ListaTeclas[contador].onclick = function () {
@@ -15,8 +16,10 @@ function tocar(idElementoAudio) {
 
      }
       Contador = Contador +1;
-      tecla.onkeydown = fuction () {
+      tecla.onkeydown = fuction () (evento) {
+        if (evento.code === 'Space'   evento.code ==='E')
        tecla.classList.add('ativa');
+       //console.log(evento.code==='Space' evento.code ==='Enter")
     } 
     
     tecla.onkeyup = function() {
